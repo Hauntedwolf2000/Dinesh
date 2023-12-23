@@ -1,3 +1,5 @@
+/* nav.css */
+
 .nav {
   position: fixed;
   display: flex;
@@ -10,12 +12,15 @@
 .nav-about {
   transform: translateX(-1.56rem);
 }
+
 .nav-skills {
   transform: translateX(-6.25rem);
 }
+
 .nav-projects {
   transform: translateX(-10.94rem);
 }
+
 .nav-contact {
   transform: translateX(-15.62rem);
 }
@@ -27,12 +32,21 @@ a {
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
+  position: relative;
 }
 
 .page-title {
   font-size: 0.875rem;
   color: white;
   cursor: default;
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
 }
 
 .nav-link {
@@ -40,11 +54,20 @@ a {
 }
 
 .nav-link:hover {
-  opacity: 1;
+  opacity: 2;
+  
+}
+
+.nav-link:hover .page-title {
+  display: block;
 }
 
 .nav-link.current {
   opacity: 1;
+}
+
+.nav-link.current .page-title {
+  display: block;
 }
 
 @media (max-width: 1100px) {
@@ -54,16 +77,20 @@ a {
   .nav-contact {
     transform: translateX(0);
   }
+
   .nav {
-    top: calc(100vh - 8rem);
+    top: calc(100vh - 3rem);
     transform: translateX(-50%);
   }
+
   .nav-link {
     width: 2rem;
   }
+
   .nav-link img {
     width: 2rem;
   }
+
   .page-title {
     display: none;
   }

@@ -90,6 +90,7 @@ export default function ContactMenu() {
       {!isSent && (
         <form onSubmit={handleSubmit}>
           <div className="form-group">
+            <h3>Sent to dineshksm22@gmail.com</h3>
             <label htmlFor="name">Name:</label>
             <input
               type="text"

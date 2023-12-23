@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 import astronautHelmet from "../assets/astronaut-helmet.png";
 import deadEye from "../assets/dead-eye.png";
@@ -7,7 +8,6 @@ import "../styles/nav.css";
 
 export default function Nav() {
   const location = useLocation();
-
   const getNavPositionClass = () => {
     switch (location.pathname) {
       case "/":

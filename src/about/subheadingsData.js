@@ -1,3 +1,22 @@
+
+const handleDownload = async () => {
+  try {
+    const response = await fetch(process.env.PUBLIC_URL + '/resume.pdf');
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'resume.pdf';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  } catch (error) {
+    console.error('Error downloading CV:', error);
+  }
+};
+
+
+
 const subheadingsData = {
   1: [
     {
@@ -7,6 +26,10 @@ const subheadingsData = {
           <p>
           I'm a creative problem solver, energized by learning new skills and highly adaptable. I'm Committed, transparent, andforwardthinking, and organized, all to achieve my career goals with passion.
           </p>
+          <h4>PH.no: 9353662551<br/>Email: dineshksm22@gmail.com<br/>Github: github.com/Hauntedwolf2000<br/>Linkedin: linkedin.com/in/dineshksm2212</h4>
+          <button onClick={handleDownload}>
+            DOWNLOAD CV
+          </button>
         </>
       ),
     },

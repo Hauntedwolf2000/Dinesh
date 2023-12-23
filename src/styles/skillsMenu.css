@@ -3,7 +3,7 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 30%;
+  top: 20%;
   right: 15vw;
   align-items: flex-end;
 }

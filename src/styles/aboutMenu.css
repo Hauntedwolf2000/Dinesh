@@ -26,11 +26,11 @@
 }
 
 .sub-container {
-  width: 18.5rem;
+  width: 21rem;
   position: fixed;
   display: flex;
   flex-direction: column;
-  top: 32%;
+  top: 25%;
   right: 10vw;
   cursor: pointer;
 }
@@ -116,7 +116,7 @@
 @media (max-width: 700px) {
   .sub-container {
     width: 15rem;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translateX(-50%);
   }
