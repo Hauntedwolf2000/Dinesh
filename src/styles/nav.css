@@ -79,7 +79,7 @@ a {
   }
 
   .nav {
-    top: calc(100vh - 9rem);
+    top: calc(100vh - 10rem);
     transform: translateX(-50%);
   }
 
