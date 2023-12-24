@@ -108,7 +108,7 @@ a {
   }
 
   .nav {
-    top: calc(100vh - 4rem);
+    top: calc(100vh - 7rem);
     transform: translateX(-50%);
     gap: 1rem; /* Adjust the gap for better spacing on smaller screens */
   }
