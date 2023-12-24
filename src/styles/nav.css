@@ -79,7 +79,7 @@ a {
   }
 
   .nav {
-    top: calc(100vh - 3rem);
+    top: calc(100vh - 8rem);
     transform: translateX(-50%);
   }
 
@@ -88,6 +88,32 @@ a {
   }
 
   .nav-link img {
+    width: 2rem;
+  }
+
+  .page-title {
+    display: none;
+  }
+}
+
+
+/* Existing styles */
+
+@media (max-width: 600px) {
+  .nav-about,
+  .nav-skills,
+  .nav-projects,
+  .nav-contact {
+    transform: translateX(0);
+  }
+
+  .nav {
+    top: calc(100vh - 4rem);
+    transform: translateX(-50%);
+    gap: 1rem; /* Adjust the gap for better spacing on smaller screens */
+  }
+
+  a {
     width: 2rem;
   }
 

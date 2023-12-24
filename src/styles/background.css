@@ -17,6 +17,11 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
 }
+.scrollable-container {
+  height: 100vh; /* Adjust the height as needed */
+  overflow: auto; /* or overflow: scroll; */
+}
+
 
 @media (max-width: 700px) {
   .shadow-overlay {

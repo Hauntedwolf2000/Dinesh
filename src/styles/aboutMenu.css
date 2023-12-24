@@ -116,7 +116,7 @@
 @media (max-width: 700px) {
   .sub-container {
     width: 15rem;
-    top: 47%;
+    top: 42%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -140,3 +140,53 @@
     font-size: 0.8rem;
   }
 }
+
+/* Your other styles */
+
+@media (max-width: 700px) {
+  .sub-container {
+    right: 1rem;
+  }
+  .item.active .title {
+    font-size: 1rem;
+  }
+  .item {
+    height: 2rem;
+  }
+}
+
+/* Tablet-specific styles */
+@media (min-width: 701px) and (max-width: 1024px) {
+  .sub-container {
+    width: 15rem;
+    top: 25%;
+    left: 75%;
+    transform: translateX(-50%);
+  }
+  .title {
+    font-size: 0.8rem;
+    padding-right: 8.5rem;
+  }
+  .active-subheading .p-container {
+    font-size: 0.8rem;
+  }
+  .icon-title-container,
+  .icon {
+    display: none;
+  }
+  h1 {
+    font-size: 0.8rem;
+  }
+  h2,
+  h3,
+  p {
+    font-size: 0.8rem;
+  }
+  .item{
+    width:15rem
+  }
+  .item.active{
+    width:15rem
+  }
+}
+
